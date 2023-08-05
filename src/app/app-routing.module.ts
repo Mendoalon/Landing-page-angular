@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'landing-page',
+    loadChildren: () => import('./landing-page/landing-page.module').then(m =>m.LandingPageModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'landing-page',
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
