@@ -44,7 +44,7 @@ export class RegisterComponent {
     if (this.myForm.valid) {
       this.showAlertAndRedirect('Usuario Registrado', 'success', 'auth/login');
     } else {
-      console.log('Usuario no registrado.');
+      this.showAlert('Error de registro', 'Usuario no registrado', 'info');
     }
   }
 
@@ -71,4 +71,5 @@ export class RegisterComponent {
       this.route.navigateByUrl(redirectUrl);
     });
   }
+
 }
