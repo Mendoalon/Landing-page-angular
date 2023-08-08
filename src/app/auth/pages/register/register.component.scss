@@ -1,0 +1,7 @@
+/* Aplicar estilos a los campos inválidos dentro de custom-input-container */
+.custom-input-container input:invalid {
+  border-color: #dc3545;
+}
+.custom-input-container select:invalid {
+  border-color: #dc3545;
+}

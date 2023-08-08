@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   title = 'Landing-page';
+  register: boolean = false;
 
 }
